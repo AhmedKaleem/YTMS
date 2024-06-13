@@ -1,0 +1,57 @@
+
+    {
+    "sports" : [
+        {
+        "category"      : "sports",
+        "subcategory"   : "cricket",
+        "question"      : "Who is the highest wicket taker in the ODIs?",
+        "options"       : [ "wasim akram", "jasprit bumrah" ],
+        "answer"        : "wasim akram"
+    },
+    {
+        "category"      : "sports",
+        "subcategory"   : "cricket",
+        "question"      : "Who has the highest catch as wicket keeper in ODIs?",
+        "options"       : [ "ms dhoni", "gilchrist"],
+        "answer"        : "ms dhoni"
+    }
+
+],
+
+"politics" : [
+    {
+        "category"      : "politics",
+        "subcategory"   : "indian politics",
+        "question"      : "what is the chronology of modi as prime minister of India?",
+        "options"       : [ "14", "15"],
+        "answer"        : "14"
+    },
+
+    {
+        "category"      : "politics",
+        "subcategory"   : "indian politics",
+        "question"      : "which is the biggest airport in india?",
+        "options"       : [ "mumbai", "delhi" ],
+        "answer"        : "delhi"
+
+    }
+],
+
+"cinema" : [
+    {
+        "category"      : "cinema",
+        "subcategory"   : "indian cinema",
+        "question"      : "first actor to win national award?",
+        "options"       : [ "14","15" ],
+        "answer"        : "14"
+    },
+
+    {
+        "category"      : "cinema",
+        "subcategory"   : "indian cinema",
+        "question"      : "which actor has the highest number of national award?",
+        "options"       : [ "mumbai", "delhi"],
+        "answer"        : "delhi"
+
+    }]
+} 

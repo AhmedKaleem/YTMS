@@ -1,0 +1,164 @@
+
+body {
+  background-image: url('background_v1.png');
+  background-size:cover;
+  /* background-position:center; */
+  background-repeat:no-repeat;
+}
+
+
+/* #main{
+  background-image: url('background_v1.png');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+} */
+
+         
+#Sports{
+  /* background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%); */
+  background-color: #eee;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  /* color: white;             */
+  color:black;            
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 10px;
+  /* border-color: white; */
+  border-color: rgb(3, 2, 29);
+  border-radius: 10px;
+    width: 50%;
+  /* display: block; */
+}
+
+#Sports:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#Politics{
+  /* background-image: linear-gradient(to right, #5691d0 0%, #bb900d 51%, #d37777 100%); */
+  background-color: #eee;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 10px;
+  border-color: rgb(3, 2, 29);
+  border-radius: 10px;
+  width: 50%;
+  color: black;
+  /* display: block; */
+}
+
+#Politics:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#Cinema{
+  /* background-image: linear-gradient(to right, #c4e453 0%, #f1b4f3  51%, #77bdd3  100%); */
+  background-color: #eee;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 10px;
+  border-color: rgb(3, 2, 29);
+  /* border-color: white; */
+  border-radius: 10px;
+  width: 50%;
+  color: black;
+  /* display: block; */
+}
+
+#Cinema:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#Fun{
+  /* background-image: linear-gradient(to right, #c4e453 0%, #f1b4f3  51%, #77bdd3  100%); */
+  background-color: #eee;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 10px;
+  border-color: rgb(3, 2, 29);
+  /* border-color: white; */
+  border-radius: 10px;
+  width: 50%;
+  color: black;
+  /* display: block; */
+}
+
+#Fun:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+#quiz-container,#sec1,#sec2,#sec3,#sec4 {
+  float: left;
+  width: 25%;
+  padding-top: 20%;
+}
+
+/* Clear floats after the columns */
+#main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#quiz-container {
+  /* margin: auto;
+
+
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between; */
+
+  /* border: 2px solid black; */
+  align-items: center;
+  align-content: center;
+
+  
+
+
+    top: 30%;
+
+    padding-top: 20%;
+  
+  /*background-image: linear-gradient(to right, #c4e453 0%, #f1b4f3  51%, #77bdd3  100%);
+  */
+}
+
