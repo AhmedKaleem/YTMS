@@ -54,10 +54,17 @@ function onSubmit(params) {
     if(selectedOption){
         if ( questionDetails.options[selectedValue] === questionDetails.answer )
         {
-            alert("You are right");
+            //alert("You are right");
+            var resultText = document.getElementById("result");
+            resultText.innerText = 'You are right';
+            resultText.style.border = '2px solid green';
         }
         else{
-            alert("Sorry , you are wrong!")
+            //alert("Sorry , you are wrong!")
+            var resultText = document.getElementById("result");
+            resultText.innerText = 'Sorry , you are wrong!';
+            resultText.style.borderColor = 'Red';
+            resultText.style.border = '2px solid red';
         }
 
     }
