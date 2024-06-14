@@ -35,10 +35,12 @@ function onSubmit(params) {
     // Get the Option Selected and compare it with answer
     const radios = document.getElementsByName('dynamicRadio');
     let selectedValue;
+    let selectedOption = false;
 
     for( var i = 0;i<radios.length;i++){
         if (radios[i].checked) {
-            selectedValue = radios[i];
+            selectedValue = i;
+            selectedOption = true;
             break;
         }
     }
@@ -49,7 +51,7 @@ function onSubmit(params) {
     //     }
     // }
 
-    if(selectedValue){
+    if(selectedOption){
         if ( questionDetails.options[selectedValue] === questionDetails.answer )
         {
             alert("You are right");
