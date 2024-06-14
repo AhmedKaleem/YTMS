@@ -1,5 +1,6 @@
 //Constant & Variable Declaration
 var quizData = [];
+var questionDetails = {};
 
 // load the Local JSON Data
 function loadData( ) {
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function initialSetUp() {   
+    questionDetails = '';
     const container = document.getElementById("sec3");
     //const submit = document.getElementById("submit-btn");
     container.style.display = 'none';
@@ -24,6 +26,39 @@ function initialSetUp() {
     document.getElementById("Politics").addEventListener('click', onPoliticsClick);
     document.getElementById("Cinema").addEventListener('click', onCinemaClick);
     document.getElementById("Fun").addEventListener('click', onFunClick);
+    document.getElementById("submit-btn").addEventListener('click', onSubmit);
+
+}
+
+function onSubmit(params) {
+    debugger;
+    // Get the Option Selected and compare it with answer
+    const radios = document.getElementsByName('dynamicRadio');
+    let selectedValue;
+
+    for( var i = 0;i<radios.length;i++){
+        if (radios[i].checked) {
+            selectedValue = radios[i];
+            break;
+        }
+    }
+    // for (const radio of radios) {
+    //     if (radio.checked) {
+    //         selectedValue = radio.value;
+    //         break;
+    //     }
+    // }
+
+    if(selectedValue){
+        if ( questionDetails.options[selectedValue] === questionDetails.answer )
+        {
+            alert("You are right");
+        }
+        else{
+            alert("Sorry , you are wrong!")
+        }
+
+    }
 
 }
 
@@ -37,6 +72,7 @@ function onSportsClick(params) {
     // Generate a random number for posting questions
 
     // Read the question from the Sports Data
+    questionDetails = sportsData[0];
     var question = sportsData[0].question
     var options = sportsData[0].options;
 
@@ -58,14 +94,15 @@ const radioContainer = document.getElementById('options');
     const radioLabel = document.createElement('label');
     radioLabel.htmlFor = 'dynamicRadio';
     radioLabel.innerText = options[i];
+    var optSelected = options[i];
 
     // Append the radio button and label to the container
     radioContainer.appendChild(radioButton);
     radioContainer.appendChild(radioLabel);
 
     // Add an event listener to the radio button
-    radioButton.addEventListener('change', function() {
-        alert('Radio button selected');
+    radioButton.addEventListener('change', function(optSelected) {
+        alert(optSelected);
     });
 
 }
