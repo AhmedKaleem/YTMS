@@ -162,3 +162,9 @@ body {
   */
 }
 
+#id-welcome{
+  align-items: center;
+  align-content: center;
+  margin-right: 120px;
+}
+
